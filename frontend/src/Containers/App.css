@@ -50,7 +50,7 @@
 }
 
 .OpeningPic {
-  background-image: url("./OpeningLogo/header.jpeg");
+  background-image: url("../Elements/OpeningLogo/header.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -89,4 +89,11 @@ hr {
 .tShadow {
   text-shadow: rgb(0, 0, 0) 1px 0 150px;
   /* text-shadow: 0px 0px 10px rgb(0, 0, 0); */
+}
+
+.selector {
+  position: fixed;
+  top: 20;
+  left:80;
+  right: 0;
 }
