@@ -1,0 +1,49 @@
+.img {
+  width: 100px;
+  height: 9pt;
+}
+
+.pad {
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.one {
+  background-image: url("./Pics/1.jpg");
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+.two {
+  background-image: url("./Pics/2.jpeg");
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+.three {
+  background-image: url("./Pics/3.jpg");
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+.fore {
+  background-image: url("./Pics/4.jpeg");
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+.five {
+  background-image: url("./Pics/5.jpg");
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+.six {
+  background-image: url("./Pics/6.jpeg");
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+.bgOK1 {
+  background-color: rgba(255, 102, 0, 0.582);
+}

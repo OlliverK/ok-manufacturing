@@ -1,0 +1,6 @@
+.popup {
+    border-radius: 5px;
+    padding-right: 15pt;
+    padding-left: 15pt;
+    background-color: rgba(255,102,0,0.5)
+}
