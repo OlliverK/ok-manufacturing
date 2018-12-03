@@ -29,11 +29,11 @@ class Main extends Component {
   }
 
   render() {
-    const { onButtonSubmit1, onButtonSubmit2 } = this
+    const {onButtonSubmit2 } = this
     return (
       <div>
         <NavBar onRouteChange={this.props.onRouteChange} />
-        <OpeningLogo onButtonSubmit1={onButtonSubmit1} onButtonSubmit2={onButtonSubmit2} />
+        <OpeningLogo onRouteChange={this.props.onRouteChange} onButtonSubmit2={onButtonSubmit2} />
         <section ref={(section) => { this.services = section; }}>
           <Services />
         </section>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
+import { faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Main from './Main'
 import CNC from './CNC'
 import Printing from './Printing'
@@ -9,8 +9,9 @@ import Plasma from './Plasma'
 import Casting from './Casting'
 import Electronics from './Electronics'
 import Sheet from './Sheet'
+import PartUpload from './PartUpload'
 
-library.add(faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap)
+library.add(faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap, faShoppingCart)
 
 class App extends Component {
   constructor() {
@@ -57,7 +58,12 @@ class App extends Component {
                                   ? (
                                     <Sheet onRouteChange={this.onRouteChange} />
                                   ) : (
-                                    <h1> Error </h1>
+                                    route === 'partupload'
+                                      ? (
+                                        <PartUpload onRouteChange={this.onRouteChange} />
+                                      ) : (
+                                        <h1> Error </h1>
+                                      )
                                   )
                               )
                           )

@@ -63,8 +63,8 @@
 }
 
 hr {
-  max-width: 50px;
-  border-width: 3px;
+  max-width: 200px;
+  border-width: 2px;
   border-color: #F60;
 }
 
@@ -94,6 +94,11 @@ hr {
 .selector {
   position: fixed;
   top: 20;
-  left:80;
+  left:60;
   right: 0;
+  bottom: 0;
+}
+
+.paright {
+  padding-right: 3vh;
 }

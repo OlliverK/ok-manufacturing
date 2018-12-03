@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import NavBar from '../Elements/NavBar/NavBar';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
-import NotAvaliable from '../Elements/NotAvaliable/NotAvaliable'
-import PrintingHover from '../Elements/PrintingHover/PrintingHover'
+import PartCardList from '../Elements/PartCardList/PartCardList'
+
 library.add(faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap)
 
-class Printing extends Component {
+class Plasma extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,11 +18,11 @@ class Printing extends Component {
   render() {
     return (
       <div>
-        <NavBar onRouteChange={this.props.onRouteChange} />
-        <PrintingHover/>
+        <NavBar onRouteChange={this.props.onRouteChange}/>
+        <PartCardList onRouteChange={this.props.onRouteChange}/>
       </div>
     )
   }
 }
 
-export default Printing;
+export default Plasma;
