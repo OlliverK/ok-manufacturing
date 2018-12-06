@@ -102,3 +102,17 @@ hr {
 .paright {
   padding-right: 3vh;
 }
+
+.inmidle {
+  padding-top: 45vh;
+  padding-bottom: 45vh;
+}
+
+.pasides {
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.patop {
+  padding-top: 15vh
+}

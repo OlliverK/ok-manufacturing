@@ -10,6 +10,8 @@ import Casting from './Casting'
 import Electronics from './Electronics'
 import Sheet from './Sheet'
 import PartUpload from './PartUpload'
+import ErrorPart from '../Elements/ErrorPart/ErrorPart'
+
 
 library.add(faGem, faTruck, faClock, faFlagUsa, faPhone, faEnvelope, faMap, faShoppingCart)
 
@@ -26,13 +28,16 @@ class App extends Component {
     console.log(route);
   }
 
+
+
   render() {
+
     const { route } = this.state;
     return (
       <div>
         {route === 'main'
           ? (
-            <Main onRouteChange={this.onRouteChange} />
+            <Main onRouteChange={this.onRouteChange} onScrollChange={this.onScrollChange} />
           ) : (
             route === 'cnc'
               ? (
@@ -62,7 +67,7 @@ class App extends Component {
                                       ? (
                                         <PartUpload onRouteChange={this.onRouteChange} />
                                       ) : (
-                                        <h1> Error </h1>
+                                        <ErrorPart onRouteChange={this.props.onRouteChange} />
                                       )
                                   )
                               )

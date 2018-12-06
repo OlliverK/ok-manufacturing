@@ -9,7 +9,7 @@ import {manufac} from './Manufac'
 const PartCard = (onRouteChange) => {
     return(
         <div className='center'>
-            <div onClick={() => onRouteChange('cnc')} className='br4 shadow-5 w5 bgdark grow' >
+            <div onClick={() => onRouteChange('cnc')} className='br4 shadow-5 w5 bgdark' >
                 <h2 className='center tOK'>Connector</h2>
                 <div className='tOK'>
                     <div className='center'>
@@ -17,7 +17,7 @@ const PartCard = (onRouteChange) => {
                         <h3>0$</h3>
                     </div>
                 </div>
-                <img className='center br4' alt='' src={picture} width="150" height="150"/>
+                <img className='center br4 grow' alt='' src={picture} width="150" height="150"/>
                 <br/>
                 <div className='pa2'>
                     <Dropdown placeholder='' fluid selection options={manufac} />
